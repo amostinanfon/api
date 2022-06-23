@@ -29,7 +29,7 @@ const verifyTokenAndAuthorization = (req, res, next) => {
         if( req.user.id === req.params.id || req.user.isAdmin){
             next();
         } else{
-            res.status(403).json("Vous n'etes authorise a le faire")
+            res.status(403).json("Vous n'etes authorisé à le faire")
         }
     }
     )
